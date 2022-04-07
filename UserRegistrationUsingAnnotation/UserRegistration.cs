@@ -28,6 +28,10 @@ namespace UserRegistrationUsingAnnotation
               [PhoneNumber]
               public string PhoneNumber1 { get; set; }
 
-
+              [StringLength(15, MinimumLength = 8, ErrorMessage = "Password should have minimum of 8  charaters ")]
+              [DataType(DataType.Password)]
+              public string Password1 { get; set; }
     }
+
+
 }

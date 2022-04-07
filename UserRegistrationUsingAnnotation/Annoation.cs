@@ -23,6 +23,9 @@ namespace UserRegistrationUsingAnnotation
             Console.WriteLine("Enter phone number");
             string PhoneNumber= Console.ReadLine();
 
+            Console.WriteLine("Enter passward ");
+            string passward = Console.ReadLine();
+
             Console.WriteLine("user Registration Validation");
             Console.WriteLine("************************************");
 
@@ -31,6 +34,7 @@ namespace UserRegistrationUsingAnnotation
             userRegistration.LastName1 = LastName;
             userRegistration.EmailId1 = EmailId;
             userRegistration.PhoneNumber1 = PhoneNumber;
+            userRegistration.Password1 = passward;
 
             ValidationContext context = new System.ComponentModel.DataAnnotations.ValidationContext(userRegistration, null, null);
             List<ValidationResult> results = new List<ValidationResult>();
@@ -50,6 +54,7 @@ namespace UserRegistrationUsingAnnotation
                 Console.WriteLine("LastName:"  + userRegistration.LastName1);
                 Console.WriteLine("EmailId:" + userRegistration.EmailId1);
                 Console.WriteLine("PhoneNumber:"+userRegistration.PhoneNumber1);
+                Console.WriteLine("passward:" +userRegistration.Password1);
             }
 
             Console.ReadKey();
