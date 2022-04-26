@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -57,7 +57,7 @@ namespace UserRegistrationUsingAnnotation
                 Console.WriteLine("passward:" +userRegistration.Password1);
             }
 
-            Console.ReadKey();
+            
         }
     }
 
