@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -36,7 +36,7 @@ namespace UserRegistrationUsingAnnotation
                 Console.WriteLine("FirstName: " + userRegistration.FirstName1);
             }
 
-            Console.ReadKey();
+            
         }
     }
 
